@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head id="i18n_" module="pm_mplanconf">
+    <meta charset="UTF-8">
+    <title>Excel文件导入</title>
+    <script type="text/javascript" src="/js/plugins/ajaxfileupload/ajaxfileupload.js"></script>
+</head>
+<body>
+<div style="">
+    <div class="ibox float-e-margins">
+        <div class="ibox-content">
+            <table class="table table-bordered table-info">
+                <tr>
+                    <th class="tdl">允装构型导入：</th>
+                    <td class="tdr">
+                        <input type="file" id="yunzhuanggouxing" size="30" name="yunzhuanggouxing" />
+                    </td>
+                    <td colspan="6" align="center">
+                        <input class="btn btn-primary" type="button" id="yzgx" name="yzgx" value="上传"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="tdl">特殊适用性导入：</th>
+                    <td class="tdr">
+                        <input type="file" id="teshushiyongxing" size="30" name="teshushiyongxing"
+                               data-options="required:true"/>
+                    </td>
+
+                    <td colspan="6" align="center">
+                        <input class="btn btn-primary" type="button" id="tssyx" name="tssyx" value="上传"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="tdl">节点物料导入：</th>
+                    <td class="tdr">
+                        <input type="file" id="jiedianwuliao" size="30" name="jiedianwuliao"
+                               data-options="required:true"/>
+                    </td>
+
+                    <td colspan="6" align="center">
+                        <input class="btn btn-primary" type="button" id="jdwl" name="jdwl" value="上传"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/js/business/excelImport.js"></script>
+</body>
+</html>

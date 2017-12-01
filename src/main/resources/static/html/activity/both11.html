@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="page-view-size" content="1280*720" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>陕西电信双十一活动</title>
+<link rel="stylesheet" type="text/css" href="../../css/activity/both11.css" />
+<style type="text/css">
+		.ConnectionPlay{ width:640px; height:280px; background:url(../../style/images/ConnectionPlay.png) no-repeat; position:absolute; left:50%; top:45%; margin:-130px 0 0 -320px;z-index:200;}
+		.ConnectionPlay p{ color:#fff; font-size:30px; text-align:center; margin-top:60px; padding:0 30px;}
+		.ConnectionPlay .but_al{ width:100%; text-align:center; position:absolute; bottom:60px;}
+		.ConnectionPlay .but_al ul{ display:inline-block; margin:0 auto;}
+		.ConnectionPlay .but_al li{ width:178px; height:90px; background:url(../../style/images/movie_but.png) center center no-repeat; font-size:28px; text-align:center; line-height:90px; color:#ababab;}
+		.ConnectionPlay .but_al li.currenta{ background:url(../../style/images/movie_buta.png) center center no-repeat; color:#fff;}
+		#loading{position: absolute;z-index:9999;}
+		/*订购样式开始*/
+		#orderBasic.popup{ width:1280px; height:720px; position:absolute; left:0; top:0; z-index:1000;}
+		#orderBasic .pop_z{ width:1280px; height:720px; position:absolute; left:0; top:0; z-index:1001;background: rgba(0, 0, 0, 0.5) !important; filter: alpha(opacity=50); background:#000;}
+		#orderBasic .Order_pop{ width:1142px; height:658px; background:url(../../style/images/OrderNew.png) no-repeat; position:absolute; left:70px; top:14px; z-index:1002; text-align:center;}
+		#orderBasic .Order_pop h3{ width:986px; text-align:left; padding-left:40px; height:70px; line-height:70px; border-bottom:1px solid #4a505b; font-size:24px; color:#ff9c00; margin:45px auto 0;}
+		#orderBasic .Order_pop h5{ font-size:28px; color:#fff; height:30px; line-height:30px; position:absolute; left:770px; top:65px;}
+		#orderBasic .Order_pop h5 i{ color:#ff9c00;}
+		#orderBasic .Order_pop h4{ display:block; width:1078px; height:50px; line-height:50px;color:#fff; font-size:28px; overflow:hidden;z-index:10005;position:absolute;}
+		#orderBasic .Order_pop .OrderMain{ width:1078px; height:330px; text-align:center; position:absolute; left:32px; top:180px;}
+		#orderBasic .Order_pop .OrderMain ul{ display:inline-block; margin:0 auto;}
+		#orderBasic .Order_pop .OrderMain li{ width:267px; height:327px; background:url(../../style/images/OrderNew_li.png) center center no-repeat; position:relative;}
+		#orderBasic .Order_pop .OrderMain li span{ width:220px;height:60px; line-height:60px; margin:80px auto 3px; text-align:center; display:block; font-size:28px; color:#fff;}
+		#orderBasic .Order_pop .OrderMain li strong{ width:220px;height:60px; line-height:60px; margin:0 auto; text-align:center; display:block; font-size:40px; color:#ff9c00;}
+		#orderBasic .Order_pop .OrderMain li em{ width:220px;height:30px; line-height:30px; margin:0 auto; text-align:center; display:block; text-decoration:line-through; font-size:20px; color:#ff9c00;}
+		#orderBasic .Order_pop .OrderMain li h6{ width:108px; height:92px; position:absolute; left:22px; top:22px;}
+		#orderBasic .Order_pop .OrderMain li h6 img{width:108px; height:92px;}
+		#orderBasic .Order_pop .OrderMain li.currenta{ background:url(../../style/images/OrderNew_lia.png) center center no-repeat;}
+		#orderBasic .Order_pop .OrderMain li > h4{ display:none;}
+		#orderBasic .Order_pop .OrderMain li.currenta > h4{ display:block; width:1078px; height:50px; line-height:50px;color:#fff; font-size:28px; overflow:hidden;z-index:10005;position:absolute; top:-55px;}
+		#orderBasic .Order_pop .OrderMain li.currenta > h4 > h7{ color:#ff9c00; font-size:32px; height:50px; line-height:50px;}
+		#orderBasic .Order_pop .OrderMain li.currenta > h4.Orde_list01{left:-5px;}
+		#orderBasic .Order_pop .OrderMain li.currenta > h4.Orde_list02{left:-273px;}
+		#orderBasic .Order_pop .OrderMain li.currenta > h4.Orde_list03{left:-540px;}
+		#orderBasic .Order_pop .OrderMain li.currenta > h4.Orde_list04{left:-806px;}
+		#orderBasic .Order_pop p{ position:absolute; left:100px; top:540px; font-size:24px; color:#ababab; height:30px; line-height:30px;}
+		#orderBasic .OrderNew_but{ width:169px; height:80px; position:absolute; top:518px; right:65px; z-index:1111111;}
+		#orderBasic .OrderNew_but li{ width:169px; height:80px; line-height:76px; font-size:28px; text-align:center; color:#fff; background:url(../../style/images/OrderNew_but.png) center center no-repeat; letter-spacing:8px;}
+		#orderBasic .OrderNew_but li.currenta{background:url(../images/OrderNew_buta.png) center center no-repeat;}
+	</style>
+	<script>
+	(function(){
+		var css = '#order_but li.currenta,#order_but li.current{line-height: 90px;}';
+		var appname = navigator.appName;
+		if (/Ranger/.test(appname)) {
+			document.writeln('<style type="text/css">' + css + '</style>');
+		}
+	})();
+</script>
+</head>
+
+<body>
+ <div class="draw">    
+ <!--中奖名单-->
+ <div class="TheWinners">
+   <ul>
+    <li><em>恭喜138****8888</em> <i>50元话费</i></li>
+    <li><em>恭喜138****8888</em> <i>500M电信流量</i></li>
+    <li><em>恭喜138****8888</em> <i>优朋影视包月体验卡</i></li>
+    <li><em>恭喜138****8888</em> <i>50元话费</i></li>
+    <li><em>恭喜138****8888</em> <i>优朋影视单点电影体验包</i></li>
+   </ul>
+  </div>  
+
+<!--抽奖区域---->
+  <div class="DrawNum" >
+   <div class="DrNumFir" id="numFir"><ul style="top:-0px"> <!--li的高度是93px 滚动一次是93px     top值  1(-0px) 2(-93px) 3(-186px) 4(-279px) 5(-372px) 6(-465px) 7(-558px) 8(-651px) 9(-744px) -->
+   <li class="DrNu01" ></li> <li class="DrNu02"></li> <li class="DrNu03"></li> <li class="DrNu04"></li> <li class="DrNu05"></li> <li class="DrNu06"></li> <li class="DrNu07"></li> <li class="DrNu08"></li> <li class="DrNu09"></li> </ul></div>
+   <div class="DrNumSec" id="numSec"><ul style="top:-744px"> <!--li的高度是93px 滚动一次是93px-->
+  <li class="DrNu01"></li> <li class="DrNu02"></li> <li class="DrNu03"></li> <li class="DrNu04"></li> <li class="DrNu05"></li> <li class="DrNu06"></li> <li class="DrNu07"></li> <li class="DrNu08"></li> <li class="DrNu09"></li> </ul></div>
+   <div class="DrNumThi" id="numThi"><ul style="top:-651px"> <!--li的高度是93px 滚动一次是93px-->
+   <li class="DrNu01"></li> <li class="DrNu02"></li> <li class="DrNu03"></li> <li class="DrNu04"></li> <li class="DrNu05"></li> <li class="DrNu06"></li> <li class="DrNu07"></li> <li class="DrNu08"></li> <li class="DrNu09"></li> </ul></div>
+  </div>
+   <!--返回按钮-->
+   <div class="ReturnBut epgcontainer" id="but"  D="details" SL="details" rowTag="ul" cloumnTag="li" rep="a">
+ 	  <ul><li class="current" oc="backUrl()"></li></ul>
+   </div>  		
+ 
+  <!--我要抽奖-->
+  <div class="MyBut epgcontainer" id="details" SR="fiRibut" U="but" D="fiRibut" rowTag="ul" cloumnTag="li" rep="a" >
+  	  <ul><li class="current" oc="go()"></li></ul>
+  </div>
+  
+   <!--活动规则按钮-->
+  <div class="ActBUt epgcontainer" id="fiRibut" U="but" SL="details" rowTag="ul" cloumnTag="li" rep="a" setfocus="f">
+  	  <ul>
+  	  <li class="ActBut01 current" oc="activityRule()"></li> 
+  	  <li class="ActBut02 current" oc="toOrder()"></li>
+  	  </ul>
+  </div> 
+  
+ <!----------以下是弹窗----------->
+ <!--活动规则弹出页-->
+  <div class="popup" id="rulePage"style="display:none;">
+   <div class="pop_zhe"></div>
+   <div class="ActivityRules">
+    <div class="PopBut epgcontainer" id="rulePage_back" rep="a" rowTag="ul" cloumnTag="li">
+    <ul><li class="currenta" oc="backUrl()"><strong>返回</strong></li></ul>
+    </div>
+   </div>
+  </div>
+<!--订购用户没中奖-->
+  <div class="popup" id="order_notWin" style="display:none;">
+   <div class="pop_zhe"></div>    
+    <div class="NotWinning">
+      <p><img src="../../lottery/both11/images/NotWinning.png" /></p>
+   <div class="PopBut"><ul><li class="currenta"><strong>再抽一次</strong></li> <li><strong>返回</strong></li></ul></div>
+    </div>
+  </div>  
+  <!--非订购用户没中奖-->
+  <div class="popup" id="notOrder_notWin" style="display:none;">
+   <div class="pop_zhe"></div>    
+    <div class="NotWinning">
+      <p><img src="../../lottery/both11/images/NotWinnOrder.png" /></p>
+   <div class="PopBut epgcontainer" id="notOrder_notWin1" rep="a" rowTag="ul" cloumnTag="li">
+   <ul><li class="currenta"  oc="toOrder()"><strong>订购优朋影视</strong></li> 
+   	   <li class="current"  oc="backUrl()"><strong>返回</strong></li></ul>
+   </div>
+    </div>
+  </div>
+  <!--订购用户次数已用完-->
+  <div class="popup" id="order_num" style="display:none;">
+   <div class="pop_zhe"></div>
+    <div class="ForSuccNo"><p><img src="../../lottery/both11/images/ForSuccNo.png" /></p>
+     <div class="PopBut"><ul><li class="currenta"><strong>确定</strong></li></ul></div>
+    </div>
+  </div>
+  <!--非订购用户次数已用完-->
+  <div class="popup" id="notOrder_num" style="display:none;">
+   <div class="pop_zhe"></div>
+    <div class="ForSuccNo"><p><img src="../../lottery/both11/images/ForSuccNo2.png" /></p>
+     <div class="PopBut epgcontainer" id="notOrder_num1" rep="a" rowTag="ul" cloumnTag="li">
+     <ul><li class="currenta" oc="toOrder()"><strong>订购优朋影视</strong></li>
+      	 <li class="current"  oc="backUrl()"><strong>确定</strong></li>
+      </ul>
+     </div>
+    </div>
+  </div>
+  
+  <!--中奖 优朋影视包月体验卡-->
+  <div class="popup"  id="notOrder_by" style="display:none;">
+   <div class="pop_zhe"></div>   
+    <div class="MonExperience">
+      <p><img src="../../lottery/both11/images/MonExperience.png" /></p>
+      <div class="PopBut epgcontainer" id="notOrder_by1" rep="a" rowTag="ul" cloumnTag="li">
+      <ul><li class="currenta" oc=""><strong>确定</strong></li> 
+          <li class="current" oc=""><strong>返回</strong></li></ul></div>
+    </div>
+  </div>
+  <!--中奖 优朋影视单点体验卡-->
+  <div class="popup" id="notOrder_dd" style="display:none;">
+   <div class="pop_zhe"></div>   
+    <div class="MonExperience">
+      <p><img src="../../lottery/both11/images/OnePinExperience.png" /></p>
+      <div class="PopBut epgcontainer" id="notOrder_dd1" rep="a" rowTag="ul" cloumnTag="li">
+      <ul><li class="currenta" oc=""><strong>确定</strong></li>
+          <li class="current" oc=""><strong>返回</strong></li></ul></div>
+    </div>
+  </div>
+ <!-- 输入手机号-->
+  <div class="popup" style="display:none;">
+   <div class="pop_zhe"></div>
+    <div class="Im_phone">
+     <div class="WinnNum111"></div><!--- 此class是三个中奖号码  WinnNum001  WinnNum011  WinnNum101  WinnNum888--->
+     <div class="InKey">
+      <ul>
+       <li class="current">1</li>
+       <li class="current">2</li>
+       <li class="current">3</li>       
+       <li class="current"><span></span></li>
+      </ul>
+      <ul>
+       <li class="current">4</li>
+       <li class="current">5</li>
+       <li class="current">6</li>
+       <li class="current">0</li>
+      </ul>
+      <ul>
+       <li class="current">7</li>
+       <li class="current">8</li>
+       <li class="current">9</li>
+       <li class="currenta"><strong>确定</strong></li>
+      </ul>
+     </div>    
+     <ul class="phone"><li class="currenta">请输入手机号</li></ul>  <!--此两个输入框li 光标移动到上面后 按确定 上面的隐藏小键盘弹出-->
+     <ul class="phone2"><li class="current">请再次输入手机号</li></ul> 
+      <div class="PopBut">
+      <ul><li class="currenta" oc="orderConfirm()"><strong>确定</strong></li>
+      <li class="current" oc="giveup()"><strong>放弃领奖</strong></li></ul>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!--手机号码确认-->
+  <div class="popup" style="display:none;">
+   <div class="pop_zhe"></div>   
+    <div class="CorrectPho">
+      <p><img src="../../lottery/both11/images/CorrectPho2.png" /></p>
+      <div class="PopBut"><ul><li class="currenta"><strong>确定</strong></li> <li class="current"><strong>返回</strong></li></ul></div>
+    </div>
+  </div>
+   <!--手机号码二次确认-->
+  <div class="popup" style="display:none;">
+   <div class="pop_zhe"></div>   
+    <div class="CorrectPho">
+      <p><img src="../../lottery/both11/images/InputSuccess.png" /></p>
+      <div class="PopBut"><ul><li class="currenta"><strong>确定</strong></li> <li class="current"><strong>返回</strong></li></ul></div>
+    </div>
+  </div>
+  
+   <!--放弃领奖-->
+  <div class="popup" id="giveup"style="display:none;">
+   <div class="pop_zhe"></div>   
+    <div class="GiveUp">
+      <p><img src="../../lottery/both11/images/GiveUp.png" /></p>
+      <div class="PopBut epgcontainer" id="giveup1" rep="a" rowTag="ul" cloumnTag="li">
+      <ul><li class="currenta" oc=""><strong>确定</strong></li> 
+      	  <li class="current" oc=""><strong>返回</strong></li></ul></div>
+    </div>
+  </div>
+  
+   <!--输入手机号码成功-->
+  <div class="popup" style="display:none;">
+   <div class="pop_zhe"></div>   
+    <div class="AccSucc">
+      <p><img src="../../lottery/both11/images/InputSuccess.png" /></p>
+      <div class="PopBut"><ul><li class="currenta"><strong>确定</strong></li> <li class="current"><strong>返回</strong></li></ul></div>
+    </div>
+  </div>
+
+
+ <!--结束div--> 
+</div>
+ <!--订购弹窗-->
+		<div id="orderBasic" defaultContainer="order_list,order_but" class="popup" style="display:none;">
+			<div class="pop_z"></div>
+			<div class="Order_pop">
+				<h3>欢迎订购优朋影视，超万余小时的影视资源等您鉴赏！</h3> 
+				<h5>客服热线：<i>4006557899</i></h5>
+				<h4 id="h4" class="Orde_list"><h7>单片订购：</h7>您所定购影片，7x24小时内，无限次观看。</h4>
+				<div class="OrderMain epgcontainer" id="order_list" D="order_but" fcss="currenta" bcss="current" rowTag="ul" cloumnTag="li">
+					<ul>
+						<li class="current"><span>单片订购</span> <strong>5元</strong></li>
+						<li class="current"><span>单月</span> <strong>20元</strong></li>
+						<li class="currenta"><span>包月续订</span> <strong>17元</strong><em>原价：20元</em><h6><img src="../../style/images/CornerMarkrec.png" /></h6></li>
+						<li class="current"><span>包年</span> <strong>200元</strong><h6><img src="../../style/images/CornerMark6.png" /></h6></li>
+					</ul>
+				</div>
+				<p>温馨提示：单月和包月续订费用随家庭通讯费收取。</p>
+				<div class="OrderNew_but epgcontainer" id="order_but" U="order_list" fcss="currenta" bcss="current" rowTag="ul" cloumnTag="li">
+					<ul><li class="current" oc="playAuth.closeWin()">返回</li></ul>
+				</div>
+			</div>
+		</div>
+ <!--订购弹窗结束-->
+<script type="text/javascript" src="../../js/jquery/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="../../js/jquery/jQueryRotate.2.2.js"></script>
+<script type="text/javascript" src="../../js/jquery/jquery.easing.min.js"></script>
+<script type="text/javascript" src="../../js/mini.js"></script>
+<script type="text/javascript" src="../../js/n.js"></script>
+<script type="text/javascript" src="../../js/ekeynew.js"></script>
+<script type="text/javascript" src="../../js/app/config.js"></script>
+<script type="text/javascript" src="../../js/base64.js"></script>
+<script type="text/javascript" src="../../js/app/loadplayer.js"></script>
+<script type="text/javascript" src="../../js/playAuth.js"></script>
+<script type="text/javascript" language="JavaScript">
+var jq = jQuery.noConflict();
+ekey.ready(".epgcontainer",function(){
+	//页面加载完毕后释放键盘监听事件
+	ekey.isMonitor = true;
+	
+	//PC浏览器测试,绑定返回事件
+	if (navigator.appName == "Netscape" && navigator.platform == "Win32") {
+		keyMap.backKey = 27;
+		ekey.setKey(27, backUrl);
+	} else {
+		//linux平台
+		keyMap.backKey = 8;
+		//绑定返回键，这个是linux盒子上的返回键
+		ekey.setKey(8, backUrl);
+		//解决某些盒子上面的返回
+		ekey.setKey(46, backUrl);
+	}
+	//机顶盒信息
+	var window_name = JSON.parse(getCookie("window_name") || window.name);
+	window.stbInfo = window_name["stbInfo"];
+	//base64对象
+	window.base64 = new Base64();
+	//建立Epg.loading对象
+	Epg = {}, Epg.loading = $("#loading");
+	
+	//思华异步请求回调，只有来源为思华的referrer才需要解析
+	var referrer = document.referrer;
+	if (window.stbInfo && (referrer == "" || referrer.indexOf(stbInfo.authUrl.split("/")[2]) > -1)) {
+		var json = tool.url2json(window.location.href);
+		//同时存在pid及result参数，证明是思华异步回调的url
+		var pid = json.pid;
+		var result = json.result;
+		if (pid && result) {
+			var obj = {
+					result : json.result,
+					vnetloginname : json.vnetloginname,
+					token : json.token,
+					verifycode : json.verifycode
+			};
+			var url = tool.json2url(obj, tool.project_domain() + "/auth/authCallback.action");
+			playAuth.callbackOrder(url, pid, json.vnetloginname, json.pmid, json.pmname, aa);
+		} else {
+			aa();
+		}
+	} else {
+		aa();
+	}
+});
+//回调
+function aa(){
+	//鉴权用户是否订购
+	var hid = stbInfo.hid.replace(/@iptv/, "") + "@iptv";
+	var ispid = stbInfo.SPID;
+	var authUrl = tool.json2url({
+		ispid : "20150428",
+		uid   : "91759391741@iptv",
+		mid   : "33608744"
+		}, conf.orderStatus);
+	proxyFun(function(data) {
+		//订购用户
+		window.orderType = data.orderType || 0;
+		//保存订购列表
+		window.productList = data.productList;
+	},authUrl);	
+};
+
+/**
+ * 抽奖开始
+ */
+function go() {
+	ClickRun();
+	
+	//代理调用抽奖接口
+	proxyFun(function(result) {
+		//debug(obj);
+		var status = result.status;
+		//请求成功
+		jq("#notOrder_by").show();
+		if (window.orderType==0) {
+			if (result.prizetype==1) {
+				if(result.prizegrade==1){
+					jq("#notOrder_by").show();
+					ekey.ckey["notOrder_by1"].setNoAction(0, 0);
+					ekey.ckey["notOrder_by1"].cFocus();
+				}else{
+					jq("#notOrder_dd").show();
+					ekey.ckey["notOrder_dd1"].setNoAction(0, 0);
+					ekey.ckey["notOrder_dd1"].cFocus();
+				}
+			}else{
+				if(result.prizegrade==4){
+					jq("#notOrder_notWin").show();
+					ekey.ckey["notOrder_notWin1"].setNoAction(0, 0);
+					ekey.ckey["notOrder_notWin1"].cFocus();
+				}else{
+					jq("#notOrder_num").show();
+					ekey.ckey["notOrder_num1"].setNoAction(0, 0);
+					ekey.ckey["notOrder_num1"].cFocus();
+					}
+				}
+		}else{
+			  toLottery(result);
+		}
+	}, tool.json2url({
+		lotteryId : conf.lotteryId,
+		userAccount :"91759236546@iptv",
+		orderType : orderType
+	}, conf.goUrl));
+}
+
+/**
+ * 订购用户中奖后进行相应弹窗提示
+ */
+function toLottery(obj) {
+	//订购用户中奖提示
+	if (obj.prizetype == 1) {
+		if(result.prizegrade==1){
+			jq("#notOrder_by").show();
+			ekey.ckey["notOrder_by1"].setNoAction(0, 0);
+			ekey.ckey["notOrder_by1"].cFocus();
+		}else{
+			jq("#notOrder_dd").show();
+			ekey.ckey["notOrder_dd1"].setNoAction(0, 0);
+			ekey.ckey["notOrder_dd1"].cFocus();
+		}
+	} else {
+		if(result.prizegrade==4){
+			jq("#notOrder_notWin").show();
+			ekey.ckey["notOrder_notWin1"].setNoAction(0, 0);
+			ekey.ckey["notOrder_notWin1"].cFocus();
+		}else{
+			jq("#notOrder_num").show();
+			ekey.ckey["notOrder_num1"].setNoAction(0, 0);
+			ekey.ckey["notOrder_num1"].cFocus();
+			}
+	}
+	//更改次数
+	//jq("#num").html(obj.remain < 0 ? 0 : obj.remain);
+}
+
+/**
+ * 返回首页
+ */
+function backUrl() {
+	var backurl = decodeURIComponent(tool.query("backurl"));
+	window.location.href = backurl;
+};
+//活动规则返回按钮
+function activityRule(){
+	jq("#rulePage").show();
+	ekey.ckey["rulePage_back"].setNoAction(0, 0);
+	ekey.ckey["rulePage_back"].cFocus();
+}
+/**
+ * 弹出订购框
+ */
+function toOrder() {
+	jq("#notOrder_num").hide();
+	jq("#notOrder_notWin").hide();
+	//未订购用户弹出订购流程
+	if (window.orderType == 0) {
+		playAuth.verifyOrder(window.productList);
+		}
+}
+function giveup(){
+	jq("#giveup").show();
+	ekey.ckey["giveup1"].setNoAction(0, 0);
+	ekey.ckey["giveup1"].cFocus();
+}
+/**
+ * 获取cookie
+ */
+function getCookie(name)
+{
+	var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+	if(arr=document.cookie.match(reg)) 
+		return unescape(arr[2]);
+	else 
+		return null;
+}
+/**
+ * 后台代理请求参数
+ */
+function proxyFun(callback, proxyUrl) {
+	ekey.isMonitor = false;
+	jq.ajax({
+		url : proxyUrl,
+		dataType : 'jsonp',
+		success : function(res){
+			callback && callback(res);
+			ekey.isMonitor = true;
+		},
+	});
+}
+
+/**
+ * 抽奖数字滚动
+ */
+ var Lottery={
+finalResult:"000",
+function ClickRun(){
+	 randomNum();
+	 setTimeout(function(){
+		 clearInterval(Lottery.ranNum);
+		 showNum(Lottery.finalResult); 
+	 },5000);	 
+},
+function showNum(n){
+	  for(var i = 0;i<n.length;i++){
+		  this.nums[i].style.top = "-"+(93*(parseInt(n[i])))+"px";
+	  }
+},
+ranNum:0,
+function randomNum(){
+	  Lottery.ranNum = setInterval(function(){
+			  var n = Math.floor(Math.random()*10)+""
+			  		  +Math.floor(Math.random()*10)+""
+			  		  +Math.floor(Math.random()*10);
+			  Lottery.showNum(n);
+		  },300);
+},
+}
+</script>
+</body>
+</html>
