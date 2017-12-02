@@ -20,10 +20,6 @@ import java.util.List;
 @Controller
 public class ExcelIeportController {
 
-    @Resource
-    ExcelIeportService excelIeportService;
-
-
     //excel数据导入
     @RequestMapping(value = "excel/import")
     @ResponseBody
@@ -44,16 +40,16 @@ public class ExcelIeportController {
     }
 
 
-    //excel数据导出
-    @RequestMapping(value = "excel/export")
-    @ResponseBody
-    public Result priceExcelExport(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        //获取excel路径
-        String filePath = request.getParameter("filePath");
-        //调用导入excel文件方法
-        //说excelIeportService.export(filePath);
-        //返回反馈信息
-        return new Result(ErrorData.SUCCESS_CODE,"导出成功");
-    };
+//    //excel数据导出
+//    @RequestMapping(value = "excel/export")
+//    @ResponseBody
+//    public Result priceExcelExport(HttpServletRequest request, HttpServletResponse response) throws IOException {
+//        //获取excel路径
+//        String filePath = request.getParameter("filePath");
+//        //调用导入excel文件方法
+//        //说excelIeportService.export(filePath);
+//        //返回反馈信息
+//        return new Result(ErrorData.SUCCESS_CODE,"导出成功");
+//    };
 
 }

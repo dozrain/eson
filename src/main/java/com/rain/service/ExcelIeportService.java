@@ -24,8 +24,7 @@ import java.util.List;
 @Service
 public class ExcelIeportService {
 
-    @Autowired
-    private ExcelDataMapper excelDataMapper;
+    //private ExcelDataMapper excelDataMapper;
     /**
      * @author  rain
      * @date    2016年10月17日 下午2:19:39
