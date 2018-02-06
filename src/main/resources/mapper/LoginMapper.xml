@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.rain.dao.mapper.ExcelDataMapper">
+    <insert id="insertPriceCata" parameterType="java.util.List">
+        insert into aog_price_catalugue_2007 (ID, SUPPLIER, PART_NUMBER,
+        VALUE
+        <foreach collection="list" item="item" index="index" separator="," >
+
+        </foreach>
+    </insert>
+</mapper>
