@@ -22,7 +22,6 @@ public class SecurityService {
     public static String hashLoginPwd(String pwd, String pwdSalt) {
         return MD5Util.sha256Hex(pwd + SALT_LOGIN, pwdSalt);
     }
-
     /**
      * 生成SessionKey
      * @return

@@ -1,14 +1,11 @@
 package com.rain.dao.mapper;
 
 import com.rain.dao.entity.User;
+import org.springframework.stereotype.Component;
+import tk.mybatis.mapper.common.Mapper;
 
-public interface UserMapper {
+@Component
+public interface UserMapper extends Mapper<User>{
 
-    int  insertUserCata(User priceList);
-
-//    @Select({
-//            "SELECT * FROM USER u WHERE u.name = name"
-//    })
-//   User findByUserName(@Param("name") String name);
-
+    User selectAccountByUsername(String username);
 }

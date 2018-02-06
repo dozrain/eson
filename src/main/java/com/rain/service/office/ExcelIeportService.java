@@ -1,6 +1,5 @@
-package com.rain.service;
+package com.rain.service.office;
 
-import com.rain.dao.mapper.ExcelDataMapper;
 import com.rain.dao.entity.User;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -9,7 +8,6 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -23,8 +21,8 @@ import java.util.List;
  */
 @Service
 public class ExcelIeportService {
-
-    //private ExcelDataMapper excelDataMapper;
+//    @Resource
+//    private ExcelDataMapper excelDataMapper;
     /**
      * @author  rain
      * @date    2016年10月17日 下午2:19:39
@@ -62,6 +60,8 @@ public class ExcelIeportService {
                 isExcel2003 = false;
             }
             list = createExcel(mFile.getInputStream(), isExcel2003);
+
+            //excelDataMapper.insertPriceCata(list);
         }catch (Exception e) {
             e.printStackTrace();
         }
@@ -96,7 +96,7 @@ public class ExcelIeportService {
      * @param wb
      * @return
      */
-    private List<User> readExcelValue(Workbook wb) {
+    private List readExcelValue(Workbook wb) {
         // 得到第一个shell
         Sheet sheet = wb.getSheetAt(0);
         // 得到Excel的行数
@@ -105,7 +105,7 @@ public class ExcelIeportService {
         if (totalRows > 1 && sheet.getRow(0) != null) {
             this.totalCells = sheet.getRow(0).getPhysicalNumberOfCells();
         }
-        List<User> userList = new ArrayList<User>();
+        List userList = new ArrayList();
         // 循环Excel行数
         for (int r = 1; r < totalRows; r++) {
             Row row = sheet.getRow(r);

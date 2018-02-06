@@ -1,8 +1,7 @@
-package com.rain.controller.fileieport;
+package com.rain.controller.office;
 
-import com.rain.service.ExcelIeportService;
-import com.rain.utils.ErrorData;
-import com.rain.utils.Result;
+import com.rain.service.office.ExcelIeportService;
+import com.rain.config.framework.Result;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -19,16 +18,16 @@ import java.util.List;
  */
 @Controller
 public class ExcelIeportController {
+    @Resource
+    ExcelIeportService excelIeportService;
 
     //excel数据导入
     @RequestMapping(value = "excel/import")
     @ResponseBody
     public Result priceExcelImport(MultipartFile file, HttpServletRequest request, HttpServletResponse response) throws IOException {
             String result ="";
-            //创建处理EXCEL的类
-            ExcelIeportService readExcel = new ExcelIeportService();
             //解析excel，获取上传的事件单
-            List  dataList = readExcel.getExcelInfo(file);
+            List dataList = excelIeportService.getExcelInfo(file);
             //和你具体业务有关,这里不做具体的示范
             if(dataList != null && !dataList.isEmpty()){
                 result = "上传成功";
@@ -36,7 +35,7 @@ public class ExcelIeportController {
                 result = "上传失败";
             }
         //返回反馈信息
-        return new Result(ErrorData.SUCCESS_CODE,result);
+        return new Result();
     }
 
 

@@ -11,7 +11,7 @@ import java.util.Date;
  */
 @Entity
 @Table(name = "user")
-public class User {
+public class LoginUser {
 
     @Id
     @GeneratedValue(generator = "JDBC")
@@ -22,16 +22,7 @@ public class User {
     private String username;
     private String iphone;
     private String department;
-    private String salt;
     private Date   createDate;
-
-    public String getSalt() {
-        return salt;
-    }
-
-    public void setSalt(String salt) {
-        this.salt = salt;
-    }
 
     public Long getId() {
         return id;

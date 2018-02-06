@@ -1,8 +1,7 @@
-package com.rain.controller.fileieport;
+package com.rain.controller.office;
 
-import com.rain.service.ExcelIeportService;
-import com.rain.utils.ErrorData;
-import com.rain.utils.Result;
+import com.rain.service.office.ExcelIeportService;
+import com.rain.config.framework.Result;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -19,7 +18,7 @@ import java.io.IOException;
 public class PdfIeportController {
 
     @Resource
-    ExcelIeportService excelImportService;
+    ExcelIeportService excelIeportService;
 
     @RequestMapping(value = "pdf/import")
     @ResponseBody
@@ -29,7 +28,7 @@ public class PdfIeportController {
         //调用导入excel文件方法
         //excelImportService.createExcel(filePath);
         //返回反馈信息
-        return new Result(ErrorData.SUCCESS_CODE,"导入成功");
+        return new Result();
     }
 
 }

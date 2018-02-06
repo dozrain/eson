@@ -1,11 +1,10 @@
 package com.rain.dao.mapper;
 
-import com.rain.dao.entity.User;
 import java.util.List;
 
 public interface ExcelDataMapper{
 
-    int  insertPriceCata(User priceList);
+    int insertPriceCata(List list);
 
 //    @Select({
 //            "SELECT * FROM aog_price_catalugue_2007 WHERE PART_NUMBER = #{PART_NUMBER}"
