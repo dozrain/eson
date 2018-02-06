@@ -1,11 +1,15 @@
-package com.rain.utils;
+package com.rain.config.framework;
+
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageInfo;
+import com.rain.config.exception.ErrorData;
+import com.rain.config.exception.ErrorDict;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-
 /**
- * @author rain
- * @date    2017/11/15
+ * @author ron
+ *         2016/5/20.
  */
 @SuppressWarnings("serial")
 public class Result<T> implements Serializable {
@@ -13,18 +17,18 @@ public class Result<T> implements Serializable {
 
     public Result(int code){
         this.code = code;
-        this.msg = "";
+        this.msg = ErrorDict.asString(code);
     }
 
     public Result(int code, Object data){
         this.code = code;
-        this.msg = "";
+        this.msg = ErrorDict.asString(code);
         this.data = data;
     }
 
     public Result(int code, Object data, int page, long total){
         this.code = code;
-        this.msg = "";
+        this.msg = ErrorDict.asString(code);
         this.data = data;
         this.page = page;
         this.total = total;
@@ -44,7 +48,7 @@ public class Result<T> implements Serializable {
 
     public void setCode(int code) {
         this.code = code;
-        this.msg = "";
+        this.msg = ErrorDict.asString(code);
     }
 
     public String getMsg() {
@@ -61,12 +65,12 @@ public class Result<T> implements Serializable {
 
     public void setData(Object data) {
         this.data = data;
-        if(true){
-//            this.total = ((Page) data).getTotal();
-//            this.page = ((Page) data).getPageNum();
-        }else if(true){
-//            this.total = ((PageInfo) data).getTotal();
-//            this.page = ((PageInfo) data).getPageNum();
+        if(data instanceof Page){
+            this.total = ((Page) data).getTotal();
+            this.page = ((Page) data).getPageNum();
+        }else if(data instanceof PageInfo){
+            this.total = ((PageInfo) data).getTotal();
+            this.page = ((PageInfo) data).getPageNum();
         }
         if(this.page == 0){
             this.page = 1;
@@ -101,11 +105,10 @@ public class Result<T> implements Serializable {
     }
 
     public static Result buildSuccess(){
-        return  new Result();
+        return  new Result(ErrorData.SUCCESS_CODE, ErrorDict.asString(ErrorData.SUCCESS_CODE));
     }
 
     public static Result buildError(){
-        return  new Result();
+        return  new Result(ErrorData.SERVER_ERROR, ErrorDict.asString(ErrorData.SERVER_ERROR));
     }
 }
-
