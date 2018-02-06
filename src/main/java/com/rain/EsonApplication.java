@@ -1,4 +1,4 @@
-package com.rain.config;
+package com.rain;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
