@@ -1,3 +1,0 @@
-webfilter:
-  amroFilterUrlPattern: /api/*;*.html;/wechat/*;
-  wwwDomain: "http://www.bireturn.com/"
