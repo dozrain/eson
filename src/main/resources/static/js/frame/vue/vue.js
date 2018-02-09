@@ -1420,7 +1420,7 @@ function getPropDefaultValue (vm, prop, key) {
     return vm._props[key]
   }
   // call factory function for non-Function types
-  // a value is Function if its prototype is function even across different execution context
+  // a value is Function if its prototype is function even across different execution constans
   return typeof def === 'function' && getType(prop.type) !== 'Function'
     ? def.call(vm)
     : def
@@ -2207,7 +2207,7 @@ function resolveSlots (
   for (var i = 0, l = children.length; i < l; i++) {
     var child = children[i];
     // named slots should only be respected if the vnode was rendered in the
-    // same context.
+    // same constans.
     if ((child.context === context || child.functionalContext === context) &&
         child.data && child.data.slot != null) {
       var name = child.data.slot;
@@ -3278,7 +3278,7 @@ function createFunctionalComponent (
     if (isDef(data.props)) { mergeProps(props, data.props); }
   }
   // ensure the createElement function in functional components
-  // gets a unique context - this is necessary for correct named slot check
+  // gets a unique constans - this is necessary for correct named slot check
   var _context = Object.create(context);
   var h = function (a, b, c, d) { return createElement(_context, a, b, c, d, true); };
   var vnode = Ctor.options.render.call(null, h, {
@@ -3824,7 +3824,7 @@ function initRender (vm) {
   vm.$slots = resolveSlots(vm.$options._renderChildren, renderContext);
   vm.$scopedSlots = emptyObject;
   // bind the createElement fn to this instance
-  // so that we get proper render context inside it.
+  // so that we get proper render constans inside it.
   // args order: tag, data, children, normalizationType, alwaysNormalize
   // internal version is used by render functions compiled from templates
   vm._c = function (a, b, c, d) { return createElement(vm, a, b, c, d, false); };

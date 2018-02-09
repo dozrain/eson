@@ -17,7 +17,7 @@ $(function(){
                     data: data,
                     success : function(jdata){
                         if(jdata.code == RESULT_CODE.SUCCESS_CODE){
-                            window.location.href = "/views/home.shtml";
+                            window.location.href = "/html/index.html";
                         }else{
                             layer.msg(jdata.msg ? jdata.msg : "登录失败!", {icon: 5});
                         }
