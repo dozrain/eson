@@ -1,0 +1,176 @@
+<!--#include virtual="../html/common/header.shtml"-->
+    <link href="../../css/frame/jquery/jquery.plupload.queue.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/views/common/styles/stylesheets.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/codemirror/theme/midnight.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-img-num1 wall-starry-sky">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar brb" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-reorder"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+                </div>
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html">
+                                <span class="icon-home"></span> dashboard
+                            </a>
+                        </li>
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-pencil"></span> forms</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="form_elements.html">Form elements</a></li>
+                                <li><a href="form_editors.html">WYSIWYG</a></li>
+                                <li><a href="form_files.html">File handling</a></li>
+                                <li><a href="form_validation.html">Validation and wizard</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-cogs"></span> components</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="component_blocks.html">Blocks and panels</a></li>
+                                <li><a href="component_buttons.html">Buttons</a></li>
+                                <li><a href="component_modals.html">Modals and popups</a></li>
+                                <li><a href="component_tabs.html">Tabs, accordion, selectable, sortable</a></li>
+                                <li><a href="component_progress.html">Progressbars</a></li>
+                                <li><a href="component_lists.html">List groups</a></li>
+                                <li><a href="component_messages.html">Messages</a></li>
+                                <li>
+                                    <a href="#">Tables<i class="icon-angle-right pull-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="component_table_default.html">Default tables</a></li>
+                                        <li><a href="component_table_sortable.html">Sortable tables</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Layouts<i class="icon-angle-right pull-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="component_layout_blank.html">Default layout(blank)</a></li>
+                                        <li><a href="component_layout_custom.html">Custom navigation</a></li>
+                                        <li><a href="component_layout_scroll.html">Content scroll</a></li>
+                                        <li><a href="component_layout_fixed.html">Fixed content</a></li>
+                                        <li><a href="component_layout_white.html">White layout</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="component_charts.html">Charts</a></li>
+                                <li><a href="component_maps.html">Maps</a></li>
+                                <li><a href="component_typography.html">Typography</a></li>
+                                <li><a href="component_gallery.html">Gallery</a></li>
+                                <li><a href="component_calendar.html">Calendar</a></li>
+                                <li><a href="component_icons.html">Icons</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="widgets.html"><span class="icon-globe"></span> widgets</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-file-alt"></span> pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="sample_login.html">Login</a></li>
+                                <li><a href="sample_registration.html">Registration</a></li>
+                                <li><a href="sample_profile.html">User profile</a></li>
+                                <li><a href="sample_profile_social.html">Social profile</a></li>
+                                <li><a href="sample_edit_profile.html">Edit profile</a></li>
+                                <li><a href="sample_mail.html">Mail</a></li>
+                                <li><a href="sample_search.html">Search</a></li>
+                                <li><a href="sample_invoice.html">Invoice</a></li>
+                                <li><a href="sample_contacts.html">Contacts</a></li>
+                                <li><a href="sample_tasks.html">Tasks</a></li>
+                                <li><a href="sample_timeline.html">Timeline</a></li>
+                                <li>
+                                    <a href="#">Email templates<i class="icon-angle-right pull-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="email_sample_1.html">Sample 1</a></li>
+                                        <li><a href="email_sample_2.html">Sample 2</a></li>
+                                        <li><a href="email_sample_3.html">Sample 3</a></li>
+                                        <li><a href="email_sample_4.html">Sample 4</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Error pages<i class="icon-angle-right pull-right"></i></a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="sample_error_403.html">403 Forbidden</a></li>
+                                        <li><a href="sample_error_404.html">404 Not Found</a></li>
+                                        <li><a href="sample_error_500.html">500 Internal Server Error</a></li>
+                                        <li><a href="sample_error_503.html">503 Service Unavailable</a></li>
+                                        <li><a href="sample_error_504.html">504 Gateway Timeout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="search...">
+                        </div>
+                    </form>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Components</a></li>
+                <li class="active">WYSIWYG editors</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="block block-transparent">
+                <div class="header">
+                    <h2>Tinymce</h2>
+                </div>
+                <div class="content np">
+                    <div id="mce_16" class="mce-tinymce mce-container mce-panel" hidefocus="1" tabindex="-1" style="visibility: hidden; border-width: 1px;"><div id="mce_16-body" class="mce-container-body mce-stack-layout"><div id="mce_17" class="mce-container mce-menubar mce-toolbar mce-first mce-stack-layout-item" role="menubar" style="border-width: 0px 0px 1px;"><div id="mce_17-body" class="mce-container-body mce-flow-layout"><div id="mce_18" class="mce-widget mce-btn mce-menubtn mce-first mce-flow-layout-item mce-toolbar-item" tabindex="-1" role="menuitem" aria-haspopup="true" aria-expanded="false"><button id="mce_18-open" role="presentation" type="button" tabindex="-1"><span>File</span> <i class="mce-caret"></i></button></div><div id="mce_19" class="mce-widget mce-btn mce-menubtn mce-flow-layout-item mce-toolbar-item" tabindex="-1" role="menuitem" aria-haspopup="true" aria-expanded="false"><button id="mce_19-open" role="presentation" type="button" tabindex="-1"><span>Edit</span> <i class="mce-caret"></i></button></div><div id="mce_20" class="mce-widget mce-btn mce-menubtn mce-flow-layout-item" tabindex="-1" role="menuitem" aria-haspopup="true"><button id="mce_20-open" role="presentation" type="button" tabindex="-1"><span>View</span> <i class="mce-caret"></i></button></div><div id="mce_21" class="mce-widget mce-btn mce-menubtn mce-last mce-flow-layout-item" tabindex="-1" role="menuitem" aria-haspopup="true"><button id="mce_21-open" role="presentation" type="button" tabindex="-1"><span>Format</span> <i class="mce-caret"></i></button></div></div></div><div id="mce_22" class="mce-container mce-panel mce-stack-layout-item" hidefocus="1" tabindex="-1"><div id="mce_22-body" class="mce-container-body mce-stack-layout"><div id="mce_23" class="mce-container mce-toolbar mce-first mce-last mce-stack-layout-item" role="toolbar"><div id="mce_23-body" class="mce-container-body mce-flow-layout"><div id="mce_24" class="mce-container mce-first mce-flow-layout-item mce-btn-group" role="toolbar"><div id="mce_24-body"><div id="mce_3" class="mce-widget mce-btn mce-first mce-disabled" tabindex="-1" role="button" aria-labeledby="mce_3" aria-label="Undo" aria-disabled="true"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-undo"></i></button></div><div id="mce_4" class="mce-widget mce-btn mce-last" tabindex="-1" role="button" aria-labeledby="mce_4" aria-label="Redo" aria-disabled="false"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-redo"></i></button></div></div></div><div id="mce_25" class="mce-container mce-flow-layout-item mce-btn-group" role="toolbar"><div id="mce_25-body"><div id="mce_5" class="mce-widget mce-btn mce-menubtn mce-first mce-last" tabindex="-1" role="button" aria-haspopup="true"><button id="mce_5-open" role="presentation" type="button" tabindex="-1"><span>Formats</span> <i class="mce-caret"></i></button></div></div></div><div id="mce_26" class="mce-container mce-flow-layout-item mce-btn-group" role="toolbar"><div id="mce_26-body"><div id="mce_6" class="mce-widget mce-btn mce-first" tabindex="-1" role="button" aria-labeledby="mce_6" aria-label="Bold"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bold"></i></button></div><div id="mce_7" class="mce-widget mce-btn mce-last" tabindex="-1" role="button" aria-labeledby="mce_7" aria-label="Italic"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-italic"></i></button></div></div></div><div id="mce_27" class="mce-container mce-flow-layout-item mce-btn-group" role="toolbar"><div id="mce_27-body"><div id="mce_8" class="mce-widget mce-btn mce-first" tabindex="-1" role="button" aria-labeledby="mce_8" aria-label="Align left"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignleft"></i></button></div><div id="mce_9" class="mce-widget mce-btn" tabindex="-1" role="button" aria-labeledby="mce_9" aria-label="Align center"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-aligncenter"></i></button></div><div id="mce_10" class="mce-widget mce-btn" tabindex="-1" role="button" aria-labeledby="mce_10" aria-label="Align right"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignright"></i></button></div><div id="mce_11" class="mce-widget mce-btn mce-last" tabindex="-1" role="button" aria-labeledby="mce_11" aria-label="Justify"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignjustify"></i></button></div></div></div><div id="mce_28" class="mce-container mce-flow-layout-item mce-btn-group" role="toolbar"><div id="mce_28-body"><div id="mce_12" class="mce-widget mce-btn mce-first" tabindex="-1" role="button" aria-labeledby="mce_12" aria-label="Bullet list"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bullist"></i></button></div><div id="mce_13" class="mce-widget mce-btn" tabindex="-1" role="button" aria-labeledby="mce_13" aria-label="Numbered list"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-numlist"></i></button></div><div id="mce_14" class="mce-widget mce-btn" tabindex="-1" role="button" aria-labeledby="mce_14" aria-label="Decrease indent"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-outdent"></i></button></div><div id="mce_15" class="mce-widget mce-btn mce-last" tabindex="-1" role="button" aria-labeledby="mce_15" aria-label="Increase indent"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-indent"></i></button></div></div></div><div id="mce_29" class="mce-container mce-last mce-flow-layout-item mce-btn-group" role="toolbar"><div id="mce_29-body"></div></div></div></div></div></div><div id="mce_30" class="mce-edit-area mce-container mce-panel mce-stack-layout-item" hidefocus="1" tabindex="-1" style="border-width: 1px 0px 0px;"><iframe id="mce_0_ifr" src='javascript:""' frameborder="0" allowtransparency="true" title="Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help" style="width: 100%; height: 400px; display: block;"></iframe></div><div id="mce_31" class="mce-statusbar mce-container mce-panel mce-last mce-stack-layout-item" hidefocus="1" tabindex="-1" style="border-width: 1px 0px 0px;"><div id="mce_31-body" class="mce-container-body mce-flow-layout"><div id="mce_32" class="mce-path mce-first mce-flow-layout-item"><div role="button" class="mce-path-item mce-last" data-index="0" tabindex="-1" id="mce_32-0">h2</div></div><div id="mce_33" class="mce-last mce-flow-layout-item mce-resizehandle"><i class="mce-ico mce-i-resize"></i></div></div></div></div></div><textarea class="tmce" id="mce_0" aria-hidden="true" style="display: none;">
+                            &lt;h2&gt;It's a predefined text&lt;/h2&gt;
+                            &lt;img src="img/example/example_150x115.jpg" align="right" class="img-thumbnail"/&gt;
+                            &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/p&gt;
+                            &lt;ul class="blue"&gt;
+                                &lt;li&gt;But also the leap into electronic typesetting&lt;/li&gt;
+                                &lt;li&gt;It was popularised in the 1960s&lt;/li&gt;
+                                &lt;li&gt;Galley of type and scrambled it to make&lt;/li&gt;
+                                &lt;li&gt;Lorem Ipsum passages, and more&lt;/li&gt;
+                            &lt;/ul&gt;
+                            &lt;p&gt;Lorem &lt;strong&gt;Ipsum has been&lt;/strong&gt; the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.&lt;/p&gt;
+                            &lt;table align="right" cellpadding="0" cellspacing="0"&gt;
+                                &lt;thead&gt;
+                                    &lt;tr&gt;
+                                        &lt;th scope="col"&gt;Lorem Ipsum passages&lt;/th&gt;
+                                        &lt;th scope="col"&gt;It has survived not&lt;/th&gt;
+                                    &lt;/tr&gt;
+                                &lt;/thead&gt;
+                                &lt;tbody&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;Galley of type&lt;/td&gt;
+                                        &lt;td&gt;Scrambled it to make&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;It was popularised in the&lt;/td&gt;
+                                        &lt;td&gt;remaining essentially unchanged&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/tbody&gt;
+                            &lt;/table&gt;
+                            &lt;p&gt;It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
+                            &lt;p&gt;There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.&lt;/p&gt;
+                            &lt;p&gt;All the Lorem Ipsum generators on the &lt;strong&gt;Internet tend to repeat&lt;/strong&gt; predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. &lt;i&gt;The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.&lt;/i&gt;&lt;/p&gt;
+                        </textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type='text/javascript' src='../../js/frame/jquery/jquery.min.js'></script>frame
+<script type='text/javascript' src='../../js/frame/bootstrap/bootstrap.min.js'></script>
+<script type='text/javascript' src='../../js/frame/tinymce/tinymce.min.js'></script>
+</html>

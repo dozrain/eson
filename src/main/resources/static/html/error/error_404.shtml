@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>welcome to rain home</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="icon" type="image/ico" href="favicon.ico"/>
+<!--#include virtual="../html/common/header.shtml"-->
     <link href="css/stylesheets.css" rel="stylesheet" type="text/css" />
 </head>
-<body class="bg-lblue bg-light"> 
+<body class="bg-default bg-light"> 
     
     <div class="container">        
 
@@ -19,13 +14,13 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="error-code">
-                        500 Internal server error
+                        ERROR: 404 Not found
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">            
-                    <div class="error-text">The server encountered an internal error or misconfiguration and was unable to complete your request</div>
+                    <div class="error-text">Oh, the page you'r looking for can't be found</div>
                 </div>
             </div>
             <div class="row">
@@ -36,8 +31,7 @@
                     <button class="btn btn-default btn-clean btn-block" onClick="history.back();">Previous page</button>
                 </div>
             </div>
-        </div>
-        
+        </div>       
 
     </div>
 
