@@ -1,11 +1,14 @@
-package com.rain.utils.sesstion;
+package com.rain.config.framework.session;
+
+import org.springframework.stereotype.Component;
 
 import java.util.Set;
 
 /**
  * Created by Administrator on 2018\2\6 0006.
  */
-public interface SesstionUtil {
+@Component("ISession")
+public interface ISession {
     /**
      * 存放key-value值 永久
      * @param key

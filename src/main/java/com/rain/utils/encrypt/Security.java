@@ -9,7 +9,7 @@ import java.util.UUID;
  * Created by tpeng on 2016/5/26.
  */
 @Component("securityService")
-public class SecurityService {
+public class Security {
 
     private static String SALT_LOGIN = "(_#ESON#_)";
 

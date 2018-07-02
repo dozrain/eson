@@ -5,7 +5,7 @@
  *******************************************************************************/
 package com.rain.utils.encrypt;
 
-import com.rain.config.exception.Exceptions;
+import com.rain.config.framework.exception.Exceptions;
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.binary.Hex;
@@ -17,14 +17,14 @@ import java.net.URLEncoder;
 
 /**
  * 封装各种格式的编码解码工具类.
- * 
+ *
  * 1.Commons-Codec的 hex/base64 编码
  * 2.自制的base62 编码
  * 3.Commons-Lang的xml/html escape
  * 4.JDK提供的URLEncoder
- * 
+ *
  * code from springside4
- * 
+ *
  * @author ron
  */
 public class Encodes {

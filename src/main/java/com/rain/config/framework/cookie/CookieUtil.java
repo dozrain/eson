@@ -1,4 +1,4 @@
-package com.rain.utils.cookie;
+package com.rain.config.framework.cookie;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
