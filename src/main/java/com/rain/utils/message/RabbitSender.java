@@ -1,10 +1,8 @@
 package com.rain.utils.message;
 
 
-import com.rain.model.Message;
-import com.rain.model.pojo.BusinessStatus;
+import com.rain.model.dao.Message;
 import org.springframework.amqp.rabbit.core.RabbitMessagingTemplate;
-import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

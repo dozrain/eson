@@ -1,33 +1,29 @@
 package com.rain.controller;
 
-import com.rain.dao.entity.User;
-import com.rain.service.UserService;
+import com.rain.config.framework.result.Result;
+import com.rain.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+
 /**
  * Created by rain on 2017\11\10 0010.
  */
 @Controller
-@RequestMapping(value = "/user")
 public class UserController {
     @Autowired
     UserService userService;
 
-//    @RequestMapping(value = "/index")
-//    public String index(){
-//        return "user/index";
-//    }
-//
-//    @RequestMapping(value = "/show")
-//    @ResponseBody
-//    public String show(@RequestParam(value = "name")String name){
-//        User user = userService.findUserByName(name);
-//        if(null != user)
-//            return user.getId()+"/"+user.getName()+"/"+user.getPassword();
-//        else return "null";
-//    }
+    @RequestMapping(value = "user/registration")
+    @ResponseBody
+    public Result registration(){
+        return userService.registration();
+    }
 
+    @RequestMapping(value = "user/cancel")
+    @ResponseBody
+    public Result cancel(){
+        return userService.cancel();
+    }
 }

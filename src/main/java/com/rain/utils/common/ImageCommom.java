@@ -1,8 +1,5 @@
 package com.rain.utils.common;
 
-import com.rain.model.pojo.file.image.Coordinates;
-import com.rain.model.pojo.file.image.Line;
-
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -10,6 +7,9 @@ import java.io.File;
 import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.*;
+
+import com.rain.model.vo.Coordinates;
+import com.rain.model.vo.Line;
 import java.util.List;
 
 /**
@@ -29,35 +29,6 @@ public class ImageCommom {
         return angle;
     }
 
-
-
-
-    public static <K, V> K getMapFirstKey(Map<K, V> map) {
-        K obj = null;
-        for (Map.Entry<K, V> entry : map.entrySet()) {
-            obj = entry.getKey();
-            if (obj != null) {
-                break;
-            }
-        }
-        return obj;
-    }
-
-    public  static List getMaxTarget(List list){
-        for (int i = 0; i < list.size()-1;) {
-            List list1 = (List) list.get(i);
-            List list2 = (List) list.get(i+1);
-            if(list1.size()>list2.size()){
-                list.remove(i+1);
-            }else{
-                list.remove(i);
-            }
-            if(list.size()==1){
-                break;
-            }
-        }
-        return list;
-    }
 
     public static boolean isTarget(int c){
         return c == Color.WHITE.getRGB();

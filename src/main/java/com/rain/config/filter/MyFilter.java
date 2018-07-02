@@ -1,9 +1,12 @@
 package com.rain.config.filter;
 
+import com.rain.config.constans.ConfigConstants;
+import com.rain.config.constans.ContextConstants;
+import com.rain.config.constans.ParamConstants;
+import com.rain.config.context.AppContext;
 import com.rain.config.context.*;
-import com.rain.utils.cookie.CookieUtil;
+import com.rain.config.framework.cookie.CookieUtil;
 import com.rain.utils.encrypt.Identities;
-import com.rain.utils.a.RequestId;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,10 +34,13 @@ public class MyFilter implements Filter,InitializingBean {
 
     private List<String> loginList = new ArrayList();
 
+
+
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse,
                          FilterChain filterChain) throws IOException, ServletException {
         try {
+
             HttpServletRequest request = (HttpServletRequest) servletRequest;
             HttpServletResponse response = (HttpServletResponse) servletResponse;
             //创建context对象
@@ -42,6 +48,12 @@ public class MyFilter implements Filter,InitializingBean {
             //加载 context参数
             loadParam(request, response);
             request.setAttribute(ContextConstants.REQUEST_CONTEXT_NAME, context);
+            boolean interSwitch = true;
+            String uri = (String) context.get(ContextConstants.KEY_URI_PARAM);
+            //除忽略列表以外，所有接口请求均必须授权，其他WEB请求不需要拦截
+            if (loginList.contains(uri) || uri == null || uri.indexOf(".html")>0) {
+                interSwitch = false;
+            }
             filterChain.doFilter(servletRequest, servletResponse);
         } catch (Exception e) {
             e.printStackTrace();

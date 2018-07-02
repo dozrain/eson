@@ -1,6 +1,6 @@
 package com.rain.utils.file.pdf;
 
-import com.rain.model.pojo.file.image.ImageContent;
+import com.rain.model.vo.ImageContent;
 import com.rain.utils.file.zip.ZipUtil;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;

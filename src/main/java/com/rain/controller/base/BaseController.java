@@ -1,9 +1,7 @@
 package com.rain.controller.base;
 
-
-import com.rain.config.context.UrlConstants;
+import com.rain.config.constans.UrlConstants;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 /**
  * @author ron
  *         2016/12/8.

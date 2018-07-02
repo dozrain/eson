@@ -1,7 +1,7 @@
 package com.rain.utils.message
 
 import com.alibaba.fastjson.JSON
-import com.rain.model.Message
+import com.rain.model.dao.Message
 import com.rain.service.mq.MessageService
 import org.springframework.stereotype.Component
 import javax.annotation.Resource

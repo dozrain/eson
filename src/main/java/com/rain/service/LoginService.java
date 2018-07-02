@@ -1,20 +1,20 @@
 package com.rain.service;
 
+
+import com.rain.config.constans.ParamConstants;
 import com.rain.config.context.AppContext;
 import com.rain.config.context.ContextUtil;
-import com.rain.config.context.ParamConstants;
-import com.rain.config.exception.ErrorData;
-import com.rain.config.exception.SystemException;
-import com.rain.config.framework.Result;
-import com.rain.dao.entity.User;
-import com.rain.dao.mapper.UserMapper;
-import com.rain.utils.cookie.CookieUtil;
-import com.rain.utils.encrypt.SecurityService;
-import com.rain.utils.sesstion.SesstionUtil;
+import com.rain.config.framework.error.ErrorData;
+import com.rain.config.framework.exception.SystemException;
+import com.rain.config.framework.result.Result;
+import com.rain.mapper.UserMapper;
+import com.rain.model.dao.User;
+import com.rain.config.framework.cookie.CookieUtil;
+import com.rain.utils.encrypt.Security;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import java.util.Map;
+import javax.annotation.Resource;
+
 
 /**
  * Created by rain on 2017\12\12 0010.
@@ -22,10 +22,10 @@ import java.util.Map;
 @Service
 public class LoginService {
 
-    @Autowired
+    @Resource
     UserMapper userMapper;
-    @Autowired
-    SecurityService securityService;
+    @Resource
+    Security security;
 
     //用户登录
     public Result loginGo(){
@@ -33,15 +33,17 @@ public class LoginService {
         String username = appContext.getSafeStringParam("logname");
         String password = appContext.getSafeStringParam("logpass");
         User user = userMapper.selectAccountByUsername(username);
-        if(password == null){
+        if(user == null||username.isEmpty()){
             SystemException.throwCustomException(ErrorData.ERR_USERNAME_LOGIN);
         }
-        password = SecurityService.hashLoginPwd(password, user.getSalt());
+        password = security.hashLoginPwd(password, user.getSalt());
         Result result = Result.buildSuccess();
         if(user.getPassword().equals(password)){
-            String sessionKey = securityService.generateSessionKey();
-            CookieUtil.addCookie(appContext.getHttpServletResponse(),ParamConstants.KEY_SESSIONKEY_PARAM,
-                                 sessionKey,ParamConstants.USER_COOKIE_EXPIRE_TIME);
+            String sessionKey = security.generateSessionKey();
+
+//            iSession.set(sessionKey, JSONObject.toJSONString(user), ParamConstants.USER_REDIS_EXPIRE_TIME);
+            CookieUtil.addCookie(appContext.getHttpServletResponse(), ParamConstants.KEY_SESSIONKEY_PARAM,
+                                  sessionKey,ParamConstants.USER_COOKIE_EXPIRE_TIME);
         }else {
             SystemException.throwCustomException(ErrorData.ERR_PASSWORD_LOGIN);
         }
@@ -52,6 +54,7 @@ public class LoginService {
         AppContext appContext = ContextUtil.getAppContext();
         String sessionKey = appContext.getSessionKey();
         if(StringUtils.isNotBlank(sessionKey)){
+//            iSession.delete(sessionKey);
             CookieUtil.deleteCookie(appContext.getHttpServletRequest(),appContext.getHttpServletResponse(),
                                     ParamConstants.KEY_SESSIONKEY_PARAM);
         }

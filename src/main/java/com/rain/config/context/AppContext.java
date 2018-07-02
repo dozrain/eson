@@ -1,7 +1,9 @@
 package com.rain.config.context;
 
 import com.alibaba.fastjson.JSONObject;
-import com.rain.dao.entity.LoginUser;
+import com.rain.config.constans.ContextConstants;
+import com.rain.config.constans.ParamConstants;
+
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.core.Conventions;
 import org.springframework.util.Assert;

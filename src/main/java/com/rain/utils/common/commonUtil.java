@@ -12,6 +12,34 @@ import java.util.*;
  * Created by Administrator on 2018-6-28 0028.
  */
 public class commonUtil {
+
+    public static <K, V> K getMapFirstKey(Map<K, V> map) {
+        K obj = null;
+        for (Map.Entry<K, V> entry : map.entrySet()) {
+            obj = entry.getKey();
+            if (obj != null) {
+                break;
+            }
+        }
+        return obj;
+    }
+
+    public  static List getMaxTarget(List list){
+        for (int i = 0; i < list.size()-1;) {
+            List list1 = (List) list.get(i);
+            List list2 = (List) list.get(i+1);
+            if(list1.size()>list2.size()){
+                list.remove(i+1);
+            }else{
+                list.remove(i);
+            }
+            if(list.size()==1){
+                break;
+            }
+        }
+        return list;
+    }
+
     /**
      * 获取数组中最大连续数字
      * */

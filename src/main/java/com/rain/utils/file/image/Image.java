@@ -1,6 +1,6 @@
 package com.rain.utils.file.image;
 
-import com.rain.model.pojo.file.image.Line;
+import com.rain.model.vo.Line;
 import net.sourceforge.tess4j.ITesseract;
 import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.TesseractException;

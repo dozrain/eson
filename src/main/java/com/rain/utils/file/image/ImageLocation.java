@@ -1,8 +1,8 @@
 package com.rain.utils.file.image;
 
-import com.rain.model.pojo.file.image.Coordinates;
-import com.rain.model.pojo.file.image.ImageContent;
-import com.rain.model.pojo.file.image.Line;
+import com.rain.model.vo.Coordinates;
+import com.rain.model.vo.ImageContent;
+import com.rain.model.vo.Line;
 import com.rain.utils.common.ImageCommom;
 
 import javax.imageio.ImageIO;

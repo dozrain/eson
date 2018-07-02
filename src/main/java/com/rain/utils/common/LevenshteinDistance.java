@@ -15,8 +15,6 @@ public class LevenshteinDistance {
             if (source.equals(target)) {
                 return 0;
             }
-            System.out.println("第一个字符串："+source);
-            System.out.println("第二个字符串："+target);
             int sourceLength = source.length();
             int targetlength = target.length();
             int length = Math.max(sourceLength,targetlength);
@@ -52,8 +50,4 @@ public class LevenshteinDistance {
             return Math.min(Math.min(a,b),c);
         }
 
-    public static void main(String[] args) {
-      int instance = LevenshteinDistance.getDistance("haha","hehe");
-      System.out.println("距离:"+instance);
-    }
 }
