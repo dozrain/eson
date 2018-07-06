@@ -1,6 +1,6 @@
 package com.rain.controller.file;
 
-import com.rain.config.framework.result.Result;
+import com.rain.utils.framework.result.Result;
 import com.rain.service.file.ExcelService;
 import com.rain.utils.file.excel.ExcelUtil;
 import com.rain.utils.file.fileCommon.FileType;
@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
-import java.io.File;
 import java.io.IOException;
 
 /**

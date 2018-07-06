@@ -1,6 +1,6 @@
 package com.rain.controller;
 
-import com.rain.config.framework.result.Result;
+import com.rain.utils.framework.result.Result;
 import com.rain.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * Created by rain on 2017\11\10 0010.
+ * Created by mail on 2017\11\10 0010.
  */
 @Controller
 public class UserController {

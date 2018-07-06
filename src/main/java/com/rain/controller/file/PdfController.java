@@ -1,7 +1,7 @@
 package com.rain.controller.file;
 
 
-import com.rain.config.framework.result.Result;
+import com.rain.utils.framework.result.Result;
 import com.rain.service.file.PdfService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
