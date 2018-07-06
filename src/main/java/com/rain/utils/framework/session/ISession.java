@@ -1,4 +1,4 @@
-package com.rain.config.framework.session;
+package com.rain.utils.framework.session;
 
 import org.springframework.stereotype.Component;
 

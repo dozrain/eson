@@ -5,7 +5,7 @@
  *******************************************************************************/
 package com.rain.utils.encrypt;
 
-import com.rain.config.framework.exception.Exceptions;
+import com.rain.utils.framework.exception.Exceptions;
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.binary.Hex;

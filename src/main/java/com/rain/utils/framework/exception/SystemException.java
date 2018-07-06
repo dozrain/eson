@@ -1,8 +1,8 @@
-package com.rain.config.framework.exception;
+package com.rain.utils.framework.exception;
 
 
-import com.rain.config.framework.error.ErrorData;
-import com.rain.config.framework.error.ErrorDict;
+import com.rain.utils.framework.error.ErrorData;
+import com.rain.utils.framework.error.ErrorDict;
 
 /**
  * 依赖ErrorCode

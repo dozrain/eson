@@ -1,4 +1,4 @@
-package com.rain.config.framework.error;
+package com.rain.utils.framework.error;
 
 import org.springframework.stereotype.Component;
 

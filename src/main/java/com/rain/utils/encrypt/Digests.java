@@ -7,7 +7,7 @@ package com.rain.utils.encrypt;
 
 
 
-import com.rain.config.framework.exception.Exceptions;
+import com.rain.utils.framework.exception.Exceptions;
 import org.apache.commons.lang3.Validate;
 
 import java.io.IOException;

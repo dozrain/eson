@@ -1,4 +1,4 @@
-package com.rain.config.framework.exception;
+package com.rain.utils.framework.exception;
 
 /**
  * Created by Administrator on 2018\1\11 0011.

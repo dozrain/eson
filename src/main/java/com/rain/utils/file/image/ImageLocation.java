@@ -99,7 +99,6 @@ public class ImageLocation {
         int w = 0,h = 0;
         try {
             long st = System.currentTimeMillis();
-
             w = img.getWidth();
             h = img.getHeight();
             //缩放

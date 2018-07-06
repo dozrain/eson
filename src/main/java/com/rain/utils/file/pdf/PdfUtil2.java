@@ -44,11 +44,11 @@ public class PdfUtil2 {
     }
 
     public static void main(String[] args) throws IOException {
-        String source = "F:\\null\\价拨件pdf\\test.zip";
-        String target = "F:\\null\\新建文件夹\\";
-        List<String> imageList =  ZipUtil.decompressionZip(source ,target);
-        for (int i = 0; i <imageList.size() ; i++) {
-            pdfToImage(imageList.get(i),i);
-        }
+//        String source = "F:\\null\\价拨件pdf\\test.zip";
+//        String target = "F:\\null\\新建文件夹\\";
+//        List<String> imageList =  ZipUtil.decompressionZip(source ,target);
+//        for (int i = 0; i <imageList.size() ; i++) {
+//            pdfToImage(imageList.get(i),i);
+//        }
     }
 }

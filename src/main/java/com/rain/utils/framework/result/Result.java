@@ -1,9 +1,9 @@
-package com.rain.config.framework.result;
+package com.rain.utils.framework.result;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageInfo;
-import com.rain.config.framework.error.ErrorData;
-import com.rain.config.framework.error.ErrorDict;
+import com.rain.utils.framework.error.ErrorData;
+import com.rain.utils.framework.error.ErrorDict;
 
 import java.io.Serializable;
 import java.util.ArrayList;

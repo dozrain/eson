@@ -1,12 +1,9 @@
 package com.rain.utils.file.excel;
 
-import com.rain.config.framework.result.Result;
-import com.rain.utils.common.commonUtil;
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.*;
-import java.util.List;
 
 /**
  * Created by Administrator on 2018-6-22 0022.

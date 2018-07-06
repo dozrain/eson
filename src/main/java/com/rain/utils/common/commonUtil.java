@@ -1,17 +1,22 @@
 package com.rain.utils.common;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 
+import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.*;
+import java.util.List;
 
 /**
  * Created by Administrator on 2018-6-28 0028.
  */
-public class commonUtil {
+public class commonUtil{
 
     public static <K, V> K getMapFirstKey(Map<K, V> map) {
         K obj = null;
@@ -129,7 +134,7 @@ public class commonUtil {
     /**
      * 根据属性名获取属性值
      * */
-    private static Object getFieldValueByName(String fieldName, Object o) {
+    public static Object getFieldValueByName(String fieldName, Object o) {
         try {
             String firstLetter = fieldName.substring(0, 1).toUpperCase();
             String getter = "get" + firstLetter + fieldName.substring(1);
@@ -139,5 +144,15 @@ public class commonUtil {
         } catch (Exception e) {
             return null;
         }
+    }
+
+    /**
+     * 获取鼠标在屏幕上的坐标
+     * */
+    /**
+     * Create the dialog.
+     */
+    public static  void GetCoordinatesOfMouseOnScreen(){
+
     }
 }

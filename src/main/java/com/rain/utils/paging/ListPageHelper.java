@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by rain on 2017\12\19 0019.
+ * Created by mail on 2017\12\19 0019.
  */
 public class ListPageHelper<T> {
     private List<T> data;
