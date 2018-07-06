@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.rain.config.constans.ContextConstants;
 import com.rain.config.constans.ParamConstants;
 
+import com.rain.model.dao.User;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.core.Conventions;
 import org.springframework.util.Assert;
@@ -136,8 +137,8 @@ public class AppContext extends LinkedHashMap<String, Object> {
         return (String) get(ContextConstants.KEY_SESSIONKEY_PARAM);
     }
 
-    public LoginUser getLoginUser(){
-        return (LoginUser) get(ContextConstants.KEY_USER);
+    public User getLoginUser(){
+        return (User) get(ContextConstants.KEY_USER);
     }
 
     public HttpServletRequest getHttpServletRequest(){
