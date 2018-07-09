@@ -27,7 +27,7 @@ public class LoginService {
     @Resource
     Security security;
 
-    //用户登录
+    //用户登录/
     public Result loginGo(){
         AppContext appContext = ContextUtil.getAppContext();
         String username = appContext.getSafeStringParam("logname");
