@@ -2,14 +2,14 @@ package com.rain.service;
 
 
 import com.rain.config.constans.ParamConstants;
-import com.rain.config.context.AppContext;
-import com.rain.config.context.ContextUtil;
-import com.rain.config.framework.error.ErrorData;
-import com.rain.config.framework.exception.SystemException;
-import com.rain.config.framework.result.Result;
+import com.rain.utils.framework.context.AppContext;
+import com.rain.utils.framework.context.ContextUtil;
+import com.rain.utils.framework.error.ErrorData;
+import com.rain.utils.framework.exception.SystemException;
+import com.rain.utils.framework.result.Result;
 import com.rain.mapper.UserMapper;
 import com.rain.model.dao.User;
-import com.rain.config.framework.cookie.CookieUtil;
+import com.rain.utils.framework.cookie.CookieUtil;
 import com.rain.utils.encrypt.Security;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
@@ -17,7 +17,7 @@ import javax.annotation.Resource;
 
 
 /**
- * Created by rain on 2017\12\12 0010.
+ * Created by mail on 2017\12\12 0010.
  */
 @Service
 public class LoginService {
