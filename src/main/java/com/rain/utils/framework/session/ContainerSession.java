@@ -1,7 +1,7 @@
 package com.rain.utils.framework.session;
 
-import com.rain.config.context.AppContext;
-import com.rain.config.context.ContextUtil;
+import com.rain.utils.framework.context.AppContext;
+import com.rain.utils.framework.context.ContextUtil;
 import javax.servlet.ServletContext;
 import java.util.Set;
 

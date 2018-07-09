@@ -1,6 +1,6 @@
 package com.rain.utils.framework.error;
 
-import com.rain.config.context.SpringContext;
+import com.rain.utils.framework.context.SpringContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

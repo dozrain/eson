@@ -1,4 +1,4 @@
-package com.rain.config.context;
+package com.rain.utils.framework.context;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

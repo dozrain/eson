@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import tk.mybatis.mapper.common.Mapper;
 
+
 public interface ExcelMapper extends Mapper<AirlinesData> {
 
     @Select({"select Z08.ZHTNO,Z08.ZHTYP,Z08.ZCURRPRICE ,Z08.ZCURRPRICE1,Z08.ZPRICE1,Z08.ZYD1,Z08.WAERS,Z08.ZSTORT,"+

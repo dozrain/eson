@@ -3,8 +3,8 @@ package com.rain.config.filter;
 import com.rain.config.constans.ConfigConstants;
 import com.rain.config.constans.ContextConstants;
 import com.rain.config.constans.ParamConstants;
-import com.rain.config.context.AppContext;
-import com.rain.config.context.*;
+import com.rain.utils.framework.context.AppContext;
+import com.rain.utils.framework.context.*;
 import com.rain.utils.encrypt.Identities;
 import com.rain.utils.framework.cookie.CookieUtil;
 import org.apache.commons.lang3.StringUtils;
@@ -201,9 +201,9 @@ public class MyFilter implements Filter,InitializingBean {
     @Override
     public void afterPropertiesSet() throws Exception {
         //微信授权 页面
-        loginList.add("/api/v1/weixin/auth");
+        loginList.add("/rain/weixin");
         //普通登录 页面
-        loginList.add("/api/v1/loginGo");
-        loginList.add("/api/v1/loginOut");
+        loginList.add("/rain/loginGo");
+        loginList.add("/rain/loginOut");
     }
 }

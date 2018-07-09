@@ -22,7 +22,7 @@ public class ExcelService {
     @Resource
     private ExcelMapper excelMapper;
     /**
-     * @author  rain
+     * @author  mail
      * @date    2016年10月17日 下午2:19:39
      * @version 1.0
      */
@@ -196,9 +196,6 @@ public class ExcelService {
         return billList;
     }
 
-    public List getExcelDataByDB(){
-        return excelMapper.selectAll();
-    }
 
 
 }

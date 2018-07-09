@@ -1,9 +1,12 @@
 package com.rain.service.file;
 
+import com.rain.utils.file.fileCommon.FileType;
+import com.rain.utils.file.fileCommon.FileUtil;
 import com.rain.utils.file.pdf.PdfUtil;
 import org.apache.xmlgraphics.image.loader.ImageContext;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -14,12 +17,12 @@ import java.util.List;
 public class ImageService {
     public static void main(String[] args) throws Exception {
 //        String fileLocal = "F:\\null\\image\\吉祥报价单\\利顿报价单27项.pdf";
-        String fileLocal = "F:\\null\\image\\圆通报价单\\1.pdf";
+        String fileLocal = "F:\\null\\image\\Excel1530170545122.xls";
 //        String fileLocal = "F:\\null\\image\\yt.jpg";
 //        //根据阿里云URL,下载压缩包到指定路径
 //        String fileLocalPath = FileUtil.downLoadFile(fileUrl,fileLocal);
 //        //获取文件类型,判断是否为zip压缩包类型
-//        FileType fileType =  FileUtil.getFileType(fileLocalPath);
+        FileType fileType =  FileUtil.getFileType(fileLocal);
 //        List<String> fileOfZip = new ArrayList<>();
 //        if(fileType.name().equals("ZIP")){
 //            //获取压缩包内文件,并解压zip压缩包到指定文件路径
@@ -30,7 +33,7 @@ public class ImageService {
 //            System.out.println("仅支持zip和rar压缩包");
 //        }
 
-        List<ImageContext> image =  PdfUtil.pdfToImage(fileLocal);
+//        List<ImageContext> image =  PdfUtil.pdfToImage(fileLocal);
     }
 }
 

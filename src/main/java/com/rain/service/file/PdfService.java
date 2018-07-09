@@ -1,6 +1,6 @@
 package com.rain.service.file;
 
-import com.rain.config.framework.result.Result;
+import com.rain.utils.framework.result.Result;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
