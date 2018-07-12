@@ -235,9 +235,7 @@ a:hover,a:focus,a:active{color: #FFF; text-decoration: none;}
       .contact-images img{margin-bottom: 5px;}
 /* eof blocks */
 
-/* page-footer */
-.page-footer{width: 100%; padding: 0px 10px; float: left;}
-    .page-footer-wrap{background: rgba(0,0,0,0.2);float: left; width: 100%; padding: 8px 10px;}
+
 /* eof page-footer */
 
 /* form elements */

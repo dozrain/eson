@@ -32,7 +32,7 @@ UL.jqueryFileTree A:hover {
 .jqueryFileTree LI.expanded { background: url(../../img/filetree/folder_open.png) left top no-repeat; }
 .jqueryFileTree LI.file { background: url(../../img/filetree/file.png) left top no-repeat; }
 .jqueryFileTree LI.wait { background: url(../../img/filetree/spinner.gif) left top no-repeat; }
-/* File Extensions*/
+/* FileUtil Extensions*/
 .jqueryFileTree LI.ext_3gp { background: url(../../img/filetree/film.png) left top no-repeat; }
 .jqueryFileTree LI.ext_afp { background: url(../../img/filetree/code.png) left top no-repeat; }
 .jqueryFileTree LI.ext_afpa { background: url(../../img/filetree/code.png) left top no-repeat; }

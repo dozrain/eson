@@ -51,7 +51,7 @@
 /* current directory */
 .elfinder-cwd-file{border: 0px;}
 
-/* selected file in "icons" view */
+/* selected fileCommon in "icons" view */
 .elfinder-cwd-view-icons .elfinder-cwd-file .ui-state-hover { background: transparent; }
 /* list view*/
 .elfinder-cwd table tr:nth-child(odd) { background-color:#edf3fe; }
