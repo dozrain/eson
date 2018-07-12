@@ -1,25 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Starry Sky</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link href="../../css/views/common/styles/stylesheets.css" rel="stylesheet" type="text/css"/>
+<!--#include virtual="../html/common/header.shtml"-->
+    <link href="../../css/views/admin/styles/registration.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/views/common/styles/backgrounds.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/frame/bootstrap/styles/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 </head>
 <body class="bg-img-num1 wall-starry-sky">
     <div class="container">
         <div class="registration-block">
-            <div class="block block-transparent">
+            <div class="block block-transparent" >
                 <div class="head tac">                    
                     <a href="../index.shtml"><img src="../../css/views/common/img/logod.png"/></a>
                 </div>
                 <div class="content controls npt">
-                    <div class="form-row">
+                    <form action="#" name="registrationData" id="registrationData" method="post">
+                        <div class="form-row">
                         <div class="col-md-6">
                             <div class="input-group">
                                 <div class="input-group-addon">
                                     <span class="icon-user"></span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="First Name"/>
+                                <input type="text" class="form-control" placeholder="First Name" required="required"/>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -27,17 +26,17 @@
                                 <div class="input-group-addon">
                                     <span class="icon-phone"></span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Phone"/>
+                                <input type="text" class="form-control" placeholder="Phone" required="required"/>
                             </div>
                         </div>
                     </div>
-                    <div class="form-row" style="margin-top: 10px;">
+                        <div class="form-row" style="margin-top: 10px;">
                         <div class="col-md-6">
                             <div class="input-group">
                                 <div class="input-group-addon">
                                     <span class="icon-key"></span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Login"/>                                
+                                <input type="text" class="form-control" placeholder="Login" required="required"/>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -49,13 +48,13 @@
                             </div>
                         </div>
                     </div>                    
-                    <div class="form-row">
+                        <div class="form-row">
                         <div class="col-md-6">
                             <div class="input-group">
                                 <div class="input-group-addon">
                                     <span class="icon-lock"></span>
                                 </div>
-                                <input type="password" class="form-control" placeholder="Password"/>
+                                <input type="password" class="form-control" placeholder="Password" required="required"/>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -63,36 +62,62 @@
                                 <div class="input-group-addon">
                                     <span class="icon-unlock-alt"></span>
                                 </div>
-                                <input type="password" class="form-control" placeholder="Re-Password"/>
+                                <input type="password" class="form-control" placeholder="Re-Password" required="required"/>
                             </div>
                         </div>
                     </div>                    
-                    <div class="form-row">
-                        <div class="col-md-12">
-                            <div class="checkbox">
-                                <label><input type="checkbox"/> Agree with terms and conditions</label>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                <button class="btn btn-default btn-block btn-clean" type="submit"  id="registrationSubmit">Sign In</button>
                             </div>
                         </div>
-                    </div>                    
-                    <div class="form-row">
-                        <div class="col-md-12">
-                            <a href="#" class="btn btn-default btn-block btn-clean" onclick="">Sign In</a>
-                        </div>
-                    </div>                    
-                    <div class="form-row">
+                        <div class="form-row">
                         <div class="col-md-12 tac"><strong>OR USE</strong></div>
                     </div>
-                    <div class="form-row">
+                        <div class="form-row">
                         <div class="col-md-6">
                             <a href="#" class="btn btn-info btn-block"><span class="icon-QQ"></span> &nbsp; QQ</a>
                         </div>
                         <div class="col-md-6">
                             <a href="#" class="btn btn-primary btn-block"><span class="icon-WeChar"></span> &nbsp; WeChar</a>
                         </div>
-                    </div>                    
+                    </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </body>
 </html>
+<script src="../../js/frame/jquery/jquery-3.2.1.js"></script>
+<script src="../../js/frame/easyui/jquery.easyui.min.js"></script>
+<script src="../../js/common/constant.js"></script>
+<script src="../../js/common/common.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("#registrationSubmit").keydown(function(event){
+            if(event.keyCode==13){
+                $("#registrationSubmit").click();
+            }
+        });
+        $('#registrationData').form({
+            onSubmit:function(){
+                var isValidate = $(this).form('validate');
+                if(isValidate){
+                    var data = $('#registrationData').serializeObject();
+                    standardAjaxCall({
+                        url: "/api/v1/registration",
+                        data: data,
+                        success : function(jdata){
+                            if(jdata.code == RESULT_CODE.SUCCESS_CODE){
+                            }else{
+                                layer.msg(jdata.msg ? jdata.msg : "登录失败!", {icon: 5});
+                            }
+                        }
+                    });
+                }
+                return false;
+            }
+        });
+    });
+</script>

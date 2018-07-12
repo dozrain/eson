@@ -7,12 +7,12 @@
             <div class="col-md-12">
                 <nav class="navbar brb" role="navigation">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="index.shtml"><img src="../css/views/common/img/logo.png"/></a>
+                        <a class="navbar-brand" href="../index.shtml"><img src="../../css/views/common/img/logo.png"/></a>
                     </div>
                     <div class="collapse navbar-collapse navbar-ex1-collapse">                                     
                         <ul class="nav navbar-nav">
                             <li>
-                                <a href="index.shtml">
+                                <a href="../index.shtml">
                                     <span class="icon-home"></span> dashboard
                                 </a>
                             </li>                            
@@ -83,7 +83,7 @@
         <div class="row">
             <div class="col-md-12">
                 <ol class="breadcrumb">
-                    <li><a href="index.shtml">Home</a></li>
+                    <li><a href="../index.shtml">Home</a></li>
                     <li class="active">Widgets</li>
                 </ol>
             </div>
@@ -123,7 +123,7 @@
                                 <div class="time">21:59 pm</div>
                             </div>
                             <div class="list-info">
-                                <img src="../css/views/common/img/example/user/olga.jpg" class="img-circle img-thumbnail"/>
+                                <img src="../../css/views/common/img/example/user/olga.jpg" class="img-circle img-thumbnail"/>
                             </div>
                             <div class="list-text">
                                 <a href="#" class="list-text-name">Title</a>
@@ -136,7 +136,7 @@
                                 <div class="time">21:55 pm</div>
                             </div>
                             <div class="list-info">
-                                <img src="../css/views/common/img/example/user/dmitry.jpg" class="img-circle img-thumbnail"/>
+                                <img src="../../css/views/common/img/example/user/dmitry.jpg" class="img-circle img-thumbnail"/>
                             </div>
                             <div class="list-text">
                                 <a href="#" class="list-text-name">Title</a>
@@ -149,7 +149,7 @@
                                 <div class="time">16:51 pm</div>
                             </div>
                             <div class="list-info">
-                                <img src="../css/views/common/img/example/user/helen.jpg" class="img-circle img-thumbnail"/>
+                                <img src="../../css/views/common/img/example/user/helen.jpg" class="img-circle img-thumbnail"/>
                             </div>
                             <div class="list-text">
                                 <a href="#" class="list-text-name">Title</a>
@@ -268,7 +268,7 @@
                                 <span>text</span>
                                 Direction 4
                             </a>                                                        
-                            <img src="../css/views/common/img/example/user/dmitry_b.jpg" class="img-circle img-thumbnail"/>
+                            <img src="../../css/views/common/img/example/user/dmitry_b.jpg" class="img-circle img-thumbnail"/>
                         </div>
                     </div>
                     <div class="content list-group">
@@ -311,7 +311,7 @@
                     <div class="head">
                         <div class="user">
                             <div class="info user-change">                                                                                
-                                <img src="../css/views/common/img/example/user/dmitry_b.jpg" class="img-circle img-thumbnail"/>
+                                <img src="../../css/views/common/img/example/user/dmitry_b.jpg" class="img-circle img-thumbnail"/>
                                 <div class="user-change-button">
                                     <span class="icon-off"></span>
                                 </div>
@@ -398,7 +398,7 @@
                         <div class="list list-contacts">
                             <a href="#" class="list-item">
                                 <div class="list-info">
-                                    <img src="../css/views/common/img/example/user/dmitry_s.jpg" class="img-circle img-thumbnail"/>
+                                    <img src="../../css/views/common/img/example/user/dmitry_s.jpg" class="img-circle img-thumbnail"/>
                                 </div>
                                 <div class="list-text">
                                     <span class="list-text-name">John Doe</span>                                    
@@ -410,7 +410,7 @@
                             </a>
                             <a href="#" class="list-item">
                                 <div class="list-info">
-                                    <img src="../css/views/common/img/example/user/olga_s.jpg" class="img-circle img-thumbnail"/>
+                                    <img src="../../css/views/common/img/example/user/olga_s.jpg" class="img-circle img-thumbnail"/>
                                 </div>
                                 <div class="list-text">
                                     <span class="list-text-name">Angelina Jolie</span>                                    
@@ -422,7 +422,7 @@
                             </a>                            
                             <a href="#" class="list-item active">
                                 <div class="list-info">
-                                    <img src="../css/views/common/img/example/user/alexey_s.jpg" class="img-circle img-thumbnail"/>
+                                    <img src="../../css/views/common/img/example/user/alexey_s.jpg" class="img-circle img-thumbnail"/>
                                 </div>
                                 <div class="list-text">
                                     <span class="list-text-name">Brad Pitt</span>                                    
@@ -434,7 +434,7 @@
                             </a>
                             <a href="#" class="list-item">
                                 <div class="list-info">
-                                    <img src="../css/views/common/img/example/user/helen_s.jpg" class="img-circle img-thumbnail"/>
+                                    <img src="../../css/views/common/img/example/user/helen_s.jpg" class="img-circle img-thumbnail"/>
                                 </div>
                                 <div class="list-text">
                                     <span class="list-text-name">Keira Knightley</span>                                    
@@ -455,22 +455,22 @@
                     <div class="content messages npr npt"> 
                         <div class="scroll" style="height: 200px;">
                             <div class="messages-item">
-                                <img src="../css/views/common/img/example/user/dmitry_s.jpg" class="img-circle img-thumbnail"/>
+                                <img src="../../css/views/common/img/example/user/dmitry_s.jpg" class="img-circle img-thumbnail"/>
                                 <div class="messages-item-text">Duis eu libero pellentesque, dapibus ante eu, vehicula leo. Nulla gravida rutrum neque</div>
                                 <div class="messages-item-date">14:33 30.08.2013</div>
                             </div>
                             <div class="messages-item inbox">
-                                <img src="../css/views/common/img/example/user/olga_s.jpg" class="img-circle img-thumbnail"/>
+                                <img src="../../css/views/common/img/example/user/olga_s.jpg" class="img-circle img-thumbnail"/>
                                 <div class="messages-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum nisl velit</div>
                                 <div class="messages-item-date">14:32 30.08.2013</div>
                             </div>                                                                                                            
                             <div class="messages-item">
-                                <img src="../css/views/common/img/example/user/dmitry_s.jpg" class="img-circle img-thumbnail"/>
+                                <img src="../../css/views/common/img/example/user/dmitry_s.jpg" class="img-circle img-thumbnail"/>
                                 <div class="messages-item-text">Duis eu libero pellentesque, dapibus ante eu, vehicula leo. Nulla gravida rutrum neque</div>
                                 <div class="messages-item-date">14:20 30.08.2013</div>
                             </div>                        
                             <div class="messages-item inbox">
-                                <img src="../css/views/common/img/example/user/olga_s.jpg" class="img-circle img-thumbnail"/>
+                                <img src="../../css/views/common/img/example/user/olga_s.jpg" class="img-circle img-thumbnail"/>
                                 <div class="messages-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum nisl velit</div>
                                 <div class="messages-item-date">14:19 30.08.2013</div>
                             </div>
@@ -511,9 +511,9 @@
         </div>
     </div>
 </body>
-<script type='text/javascript' src='../js/frame/jquery/jquery-3.2.1.js'></script>
-<script type='text/javascript' src='../js/frame/jquery/flot/jquery.flot.js'></script>
-<script type='text/javascript' src="../js/common/constant.js"></script>
-<script type='text/javascript' src="../js/common/common.js"></script>
-<script type='text/javascript' src='../js/views/index/charts.js'></script>
+<script type='text/javascript' src='../../js/frame/jquery/jquery-3.2.1.js'></script>
+<script type='text/javascript' src='../../js/frame/jquery/flot/jquery.flot.js'></script>
+<script type='text/javascript' src="../../js/common/constant.js"></script>
+<script type='text/javascript' src="../../js/common/common.js"></script>
+<script type='text/javascript' src='../../js/views/index/charts.js'></script>
 </html>

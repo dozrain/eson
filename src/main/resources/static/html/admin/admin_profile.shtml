@@ -1,67 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>        
-    <title>Taurus</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--#include virtual="../html/common/header.shtml"-->
     <link href="../../css/views/common/styles/stylesheets.css" rel="stylesheet" type="text/css"/>
 </head>
 <body class="bg-img-num1 wall-starry-sky">
     <div class="container">
-        <div class="row">                   
-            <div class="col-md-12">
-                 <nav class="navbar brb" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-reorder"></span>                            
-                        </button>                                                
-                        <a class="navbar-brand" href="index.html"><img src="../../css/views/common/img/logo.png"/></a>
-                    </div>
-                    <div class="collapse navbar-collapse navbar-ex1-collapse">                                     
-                        <ul class="nav navbar-nav">
-                            <li>
-                                <a href="index.html">
-                                    <span class="icon-home"></span> dashboard
-                                </a>
-                            </li>                            
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-pencil"></span> forms</a>
-                                <ul class="dropdown-menu">                                    
-                                    <li><a href="form_elements.html">Form elements</a></li>
-                                    <li><a href="form_editors.html">WYSIWYG</a></li>
-                                    <li><a href="form_files.html">File handling</a></li>
-                                    <li><a href="form_validation.html">Validation and wizard</a></li>
-                                </ul>                                
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-cogs"></span> components</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="component_blocks.html">Blocks and panels</a></li>
-                                    <li><a href="component_buttons.html">Buttons</a></li>
-                                    <li><a href="component_calendar.html">Calendar</a></li>
-                                    <li><a href="component_icons.html">Icons</a></li>                                    
-                                </ul>
-                            </li>                          
-                            <li><a href="widgets.html"><span class="icon-globe"></span> widgets</a></li>
-                            <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-file-alt"></span> pages</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="sample_login.html">Login</a></li>
-                                    <li><a href="sample_registration.html">Registration</a></li>
-                                    <li><a href="sample_profile.html">User profile</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <form class="navbar-form navbar-right" role="search">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="search..."/>
-                            </div>                            
-                        </form>                                            
-                    </div>
-                </nav>               
-            </div>
-        </div>
-
+        <!--#include virtual="../../html/common/menu.shtml"-->
         <div class="row">
             <div class="col-md-12">
                 <ol class="breadcrumb">

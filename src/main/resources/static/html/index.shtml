@@ -1,5 +1,5 @@
 <!--#include virtual="../html/common/header.shtml"-->
-<link href="../../css/views/common/styles/stylesheets.css" rel="stylesheet" type="text/css"/>
+<link href="../css/views/common/styles/stylesheets.css" rel="stylesheet" type="text/css"/>
 </head>
 <body class="bg-img-num1 wall-starry-sky">
 <div class="container container-fixed">
@@ -495,7 +495,7 @@
             </div>
         </div>
     </div>
-    <!--#include virtual="../html/forms/footer.shtml"-->
+    <!--#include virtual="../html/common/footer.shtml"-->
 </div>
 </body>
 <script type='text/javascript' src='../js/frame/jquery/jquery-3.2.1.js'></script>

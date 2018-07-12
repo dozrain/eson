@@ -2,22 +2,21 @@
     <div class="col-md-12">
         <nav class="navbar brb" role="navigation">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html"><img src="../css/views/common/img/logo.png"/></a>
+                <a class="navbar-brand" href="index.shtml"><img src="../../css/views/common/img/logo.png"/></a>
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="index.html">
+                        <a href="index.shtml">
                             <span class="icon-home"></span> dashboard
                         </a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-pencil"></span> forms</a>
                         <ul class="dropdown-menu">
-                            <li><a href="forms/form_elements.html">Form elements</a></li>
-                            <li><a href="forms/form_editors.html">WYSIWYG</a></li>
-                            <li><a href="forms/form_files.html">File handling</a></li>
-                            <li><a href="forms/form_validation.html">Validation and wizard</a></li>
+                            <li><a href="../forms/form_elements.shtml">Form elements</a></li>
+                            <li><a href="../forms/form_editors.shtml">WYSIWYG</a></li>
+                            <li><a href="../forms/form_validation.shtml">Validation and wizard</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -39,11 +38,9 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-file-alt"></span> Admin</a>
                         <ul class="dropdown-menu">
-                            <li><a href="sample_login.html">Login</a></li>
-                            <li><a href="admin/admin_registration.html">Registration</a></li>
-                            <li><a href="admin/admin_profile.html">User</a></li>
-                            <li><a href="admin/admin_sample_social.html">Social</a></li>
-                            <li><a href="sample_timeline.html">Timeline</a></li>
+                            <li><a href="admin/admin_registration.shtml">Registration</a></li>
+                            <li><a href="admin/admin_profile.shtml">User</a></li>
+                            <li><a href="admin/admin_sample_social.shtml">Social</a></li>
                             <li>
                                 <a href="#">Email templates<i class="icon-angle-right pull-right"></i></a>
                                 <ul class="dropdown-submenu">
