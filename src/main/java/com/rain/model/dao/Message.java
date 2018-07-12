@@ -3,10 +3,11 @@ package com.rain.model.dao;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 
 @Table(name = "MESSAGE")
-public class Message {
+public class Message implements Serializable {
     @Id
     @GeneratedValue(generator = "JDBC")
     private Long id;

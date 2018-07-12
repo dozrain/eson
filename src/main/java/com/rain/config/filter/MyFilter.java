@@ -30,7 +30,7 @@ import java.util.Map;
 @Component
 public class MyFilter implements Filter,InitializingBean {
 
-    Logger logger = LoggerFactory.getLogger(MyFilter.class);
+    private static Logger logger = LoggerFactory.getLogger(MyFilter.class);
 
     private List<String> loginList = new ArrayList();
 
